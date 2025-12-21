@@ -310,8 +310,9 @@
 
         .experience-card:nth-child(1) .experience-company { color: var(--cyan); }
         .experience-card:nth-child(2) .experience-company { color: var(--coral); }
-        .experience-card:nth-child(3) .experience-company { color: var(--yellow); }
-        .experience-card:nth-child(4) .experience-company { color: var(--mint); }
+        .experience-card:nth-child(3) .experience-company { color: var(--purple); }
+        .experience-card:nth-child(4) .experience-company { color: var(--yellow); }
+        .experience-card:nth-child(5) .experience-company { color: var(--mint); }
 
         .experience-header {
             display: flex;
@@ -571,6 +572,7 @@
             background: radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.15), transparent 50%);
             opacity: 0;
             transition: opacity 0.3s ease;
+            pointer-events: none;
         }
 
         .cert-card:hover {
@@ -601,6 +603,11 @@
             margin-bottom: 14px;
         }
 
+        .cert-actions {
+            position: relative;
+            z-index: 10;
+        }
+
         .cert-actions a {
             display: inline-flex;
             align-items: center;
@@ -615,6 +622,7 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 8px 20px rgba(0, 255, 255, 0.25);
             transition: transform 0.2s ease;
+            cursor: pointer;
         }
 
         .cert-actions a:hover {
@@ -727,7 +735,7 @@
         <header>
             <div class="avatar"><img src="assets/profile.jpg" alt="Ramit Sharma"></div>
             <h1>Ramit Sharma</h1>
-            <p class="tagline">Software Engineer · MSc Autonomous Systems</p>
+            <p class="tagline">Machine Learning Engineer · MSc Autonomous Systems</p>
             <p class="location">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                 Frankfurt (Oder), Germany
@@ -746,7 +754,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     Email
                 </a>
-                <a href="tel:+4917635440674">
+                <a href="tel:+4917674545056">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     Phone
                 </a>
@@ -780,6 +788,36 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
+                        <div class="experience-company">Aaron GmbH</div>
+                        <div class="experience-role">Machine Learning Research Engineer</div>
+                        <div class="experience-location">Berlin, Germany</div>
+                    </div>
+                    <span class="experience-date">Jun 2022 – Dec 2023</span>
+                </div>
+                <ul>
+                    <li>Designed and implemented data pipelines for robust cleaning and anonymization of textual data</li>
+                    <li>Built machine learning models for text as well as audio data</li>
+                    <li>Created software solutions to enhance and optimize dialogue flow, improving user interactions</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Keras</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Librosa</span>
+                    <span class="tech-tag">Whisper</span>
+                    <span class="tech-tag">Flair</span>
+                    <span class="tech-tag">AWS Sagemaker</span>
+                    <span class="tech-tag">AWS Athena</span>
+                    <span class="tech-tag">ChatGPT</span>
+                    <span class="tech-tag">Jira</span>
+                    <span class="tech-tag">Bitbucket</span>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
                         <div class="experience-company">Fraunhofer IAIS</div>
                         <div class="experience-role">Research Assistant</div>
                         <div class="experience-location">Sankt Augustin, Germany</div>
@@ -787,8 +825,8 @@
                     <span class="experience-date">Oct 2020 – Sep 2021</span>
                 </div>
                 <ul>
-                    <li>Developed systems to detect lesions in 3D CT scans</li>
-                    <li>Trained three object detection models (RetinaNet, YOLOv3, YOLOv5) at various resolutions to analyze impact on accuracy and speed</li>
+                    <li>Contributed to the development of lesion detection methods for complex 3D CT scans</li>
+                    <li>Conducted training sessions and experiments with three object detection models—RetinaNet, YOLOv3, and YOLOv5—across various resolutions, analyzing their impact on model accuracy and speed</li>
                 </ul>
                 <div class="tech-stack">
                     <span class="tech-tag">Python</span>
@@ -914,6 +952,9 @@
                     <span class="skill-tag">Keras</span>
                     <span class="skill-tag">PyTorch</span>
                     <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">Librosa</span>
+                    <span class="skill-tag">Whisper</span>
+                    <span class="skill-tag">Flair</span>
                     <span class="skill-tag">Matplotlib</span>
                     <span class="skill-tag">OpenCV</span>
                     <span class="skill-tag">NLTK</span>
@@ -931,12 +972,16 @@
                 <div class="skills-label">Databases & Tools</div>
                 <div class="skills-grid">
                     <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">PostgreSQL</span>
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">GPU Cluster</span>
                     <span class="skill-tag">Heroku</span>
-                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">AWS Sagemaker</span>
+                    <span class="skill-tag">AWS Athena</span>
+                    <span class="skill-tag">AWS Cloudwatch</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Bitbucket</span>
+                    <span class="skill-tag">ChatGPT</span>
                     <span class="skill-tag">Jupyter Notebook</span>
                     <span class="skill-tag">PyCharm</span>
                     <span class="skill-tag">VS Code</span>
@@ -948,6 +993,7 @@
                 <div class="skills-grid">
                     <span class="skill-tag">Linux Ubuntu</span>
                     <span class="skill-tag">Windows</span>
+                    <span class="skill-tag">macOS</span>
                 </div>
             </div>
         </section>
