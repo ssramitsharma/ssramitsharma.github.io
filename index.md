@@ -34,6 +34,16 @@ Machine Learning Engineer with 4+ years of experience building production ML and
 
 - 3D CT lesion detection with RetinaNet and YOLO models
 
+### Audi AG — Intern (Industrial Engineering)
+**Nov 2019 – Apr 2020** · Ingolstadt, Germany
+
+- Production planning automation and scenario comparison software
+
+### Insoro GmbH — Applied ML Intern
+**Apr 2019 – Jun 2019** · Cologne, Germany
+
+- LSTM/GRU time-series models for stock trend prediction
+
 ## Education
 
 **M.Sc. Autonomous Systems**, Hochschule Bonn-Rhein-Sieg (2017–2022)  
@@ -45,7 +55,11 @@ Machine Learning Engineer with 4+ years of experience building production ML and
 
 **Latest Pashupatinath video:** [Pashupatinath: The Forgotten Siege](https://www.youtube.com/watch?v=v-OAaPG1hSc) · [Part 1](https://www.youtube.com/watch?v=dCXW0DsBzfw)
 
-## References
+## References & Certificates
 
-- [Doctolib Interim Report (PDF)](assets/doctolib_interim_report.pdf)
 - [CV (PDF)](assets/Ramit_Sharma_CV.pdf)
+- [Doctolib Interim Report](assets/doctolib_interim_report.pdf)
+- [Fraunhofer IAIS Certificate](assets/fraunhofer_certificate.pdf)
+- [Audi AG Internship Certificate](assets/second-internship.pdf)
+- [Insoro GmbH Internship Certificate](assets/first_intrenship.pdf)
+- [University Degree Certificate](assets/university_certificate.pdf)
