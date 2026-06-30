@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ramit Sharma — Software Engineer</title>
+  <title>Ramit Sharma — Machine Learning Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
@@ -266,7 +266,70 @@
     .cert-meta { color: #666; font-size: 0.99rem; margin-bottom: 8px; }
     .cert-actions a { display: inline-block; background: var(--company); color: white; border-radius: 9px; padding: 7px 15px; text-decoration: none; font-weight: 500; font-size: 0.91rem; margin-top: 4px; border: none; box-shadow: 0 3px 10px rgba(34,139,34,0.09); transition: background .16s; }
     .cert-actions a:hover { background: var(--accent); }
-    /* --- Languages --- */
+    .cert-actions a + a { margin-left: 8px; }
+    /* --- YouTube embed --- */
+    .youtube-featured { margin-top: 20px; }
+    .youtube-featured h3 { font-size: 1.05rem; color: var(--primary); margin: 0 0 12px 0; font-weight: 700; }
+    .youtube-embed-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+      background: #111;
+    }
+    .youtube-embed-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .youtube-poster {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .youtube-poster img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.88;
+    }
+    .youtube-play {
+      position: relative;
+      z-index: 1;
+      width: 68px;
+      height: 48px;
+      background: rgba(196, 48, 43, 0.95);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+      transition: transform .15s, background .15s;
+    }
+    .youtube-poster:hover .youtube-play {
+      transform: scale(1.06);
+      background: #e62117;
+    }
+    .youtube-play::after {
+      content: '';
+      border-style: solid;
+      border-width: 10px 0 10px 18px;
+      border-color: transparent transparent transparent #fff;
+      margin-left: 4px;
+    }
+    .youtube-caption { font-size: 0.92rem; color: #666; margin-top: 10px; }
+    .youtube-caption a { color: var(--company); }
     .languages-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -327,12 +390,14 @@
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#publications">Publications</a>
+    <a href="#youtube">YouTube</a>
+    <a href="#references">References</a>
     <a href="#contact">Contact</a>
   </nav>
   <div class="hero-content">
     <img src="assets/profile.jpg" alt="Ramit Sharma" class="profile-img">
     <h1>Ramit Sharma</h1>
-    <div class="subtitle">Software Engineer · MSc Autonomous Systems</div>
+    <div class="subtitle">Machine Learning Engineer · MSc Autonomous Systems</div>
     <div class="hero-actions">
       <a href="assets/Ramit_Sharma_CV.pdf" download="Ramit_Sharma_CV.pdf">Download CV</a>
       <a href="mailto:ssramitsharma@gmail.com">Email Me</a>
@@ -340,8 +405,9 @@
     <div class="hero-social">
       <a href="https://linkedin.com/in/ssramitsharma" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://github.com/ssramitsharma" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.youtube.com/@MysteriesofAaryavarta" target="_blank" rel="noopener" title="YouTube — Mysteries of Aaryavarta"><i class="fab fa-youtube"></i></a>
       <a href="mailto:ssramitsharma@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="tel:+4917635440674" title="Phone"><i class="fas fa-phone"></i></a>
+      <a href="tel:+4917674545056" title="Phone"><i class="fas fa-phone"></i></a>
     </div>
   </div>
   <div class="hero-spacer"></div>
@@ -352,9 +418,10 @@
   <div class="about-card">
     <h2>About</h2>
     <p class="about-text">
-      Software Engineer with expertise in Machine Learning, Natural Language Processing, and LLM-based conversational AI. 
-      Experienced in building production-grade Python solutions for healthcare and fintech applications. 
-      Strong background in deep learning, computer vision, and audio processing with hands-on experience in AWS cloud services.
+      Machine Learning Engineer / Software Engineer with 4+ years of experience building and shipping production ML and AI systems,
+      with a focus on NLP, LLMs, and conversational AI. At Doctolib, I contributed to an LLM-based phone assistant in a real-world
+      healthcare setting, building Python agents, improving reliability and observability, and implementing GDPR-safe analytics.
+      Strong background in Python, deep learning, and scalable ML systems across industry and applied research.
     </p>
   </div>
   <div class="basic-info-card">
@@ -370,7 +437,7 @@
       </tr>
       <tr>
         <td>Phone:</td>
-        <td>+49 176 4545056</td>
+        <td>+49 176 74545056</td>
       </tr>
       <tr>
         <td>Address:</td>
@@ -378,7 +445,7 @@
       </tr>
       <tr>
         <td>Languages:</td>
-        <td>English, Hindi, Nepali, German (A1)</td>
+        <td>English, Hindi, Nepali, German (A2)</td>
       </tr>
     </table>
   </div>
@@ -391,55 +458,54 @@
     <div class="skills-label">Programming Languages</div>
     <div class="skills-grid">
       <span class="skill-tag">Python</span>
-      <span class="skill-tag">Matlab</span>
       <span class="skill-tag">Java</span>
       <span class="skill-tag">C++</span>
-      <span class="skill-tag">HTML</span>
-      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">Matlab</span>
     </div>
   </div>
   <div class="skills-category">
-    <div class="skills-label">Python Libraries & Frameworks</div>
+    <div class="skills-label">Generative AI & ML</div>
     <div class="skills-grid">
-      <span class="skill-tag">Pydantic AI</span>
-      <span class="skill-tag">NumPy</span>
-      <span class="skill-tag">Pandas</span>
-      <span class="skill-tag">SciPy</span>
+      <span class="skill-tag">PydanticAI</span>
+      <span class="skill-tag">LangChain</span>
+      <span class="skill-tag">Promptfoo</span>
+      <span class="skill-tag">PyTorch</span>
       <span class="skill-tag">TensorFlow</span>
       <span class="skill-tag">Keras</span>
-      <span class="skill-tag">PyTorch</span>
       <span class="skill-tag">Scikit-learn</span>
-      <span class="skill-tag">Librosa</span>
       <span class="skill-tag">Whisper</span>
       <span class="skill-tag">Flair</span>
-      <span class="skill-tag">Matplotlib</span>
       <span class="skill-tag">OpenCV</span>
+      <span class="skill-tag">Librosa</span>
       <span class="skill-tag">NLTK</span>
       <span class="skill-tag">SpaCy</span>
-      <span class="skill-tag">Gensim</span>
-      <span class="skill-tag">Flask</span>
+    </div>
+  </div>
+  <div class="skills-category">
+    <div class="skills-label">Cloud, Infrastructure & MLOps</div>
+    <div class="skills-grid">
+      <span class="skill-tag">Kubernetes</span>
+      <span class="skill-tag">Docker</span>
+      <span class="skill-tag">Terraform</span>
+      <span class="skill-tag">AWS SageMaker</span>
+      <span class="skill-tag">AWS Athena</span>
+      <span class="skill-tag">AWS Glue</span>
+      <span class="skill-tag">Datadog</span>
+      <span class="skill-tag">Sentry</span>
       <span class="skill-tag">MLflow</span>
-      <span class="skill-tag">Tkinter</span>
-      <span class="skill-tag">Pydicom</span>
-      <span class="skill-tag">PIL</span>
+      <span class="skill-tag">GPU Clusters</span>
     </div>
   </div>
   <div class="skills-category">
     <div class="skills-label">Databases & Tools</div>
     <div class="skills-grid">
+      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">Elasticsearch</span>
       <span class="skill-tag">MySQL</span>
       <span class="skill-tag">Git</span>
-      <span class="skill-tag">Docker</span>
-      <span class="skill-tag">GPU Cluster</span>
-      <span class="skill-tag">Heroku</span>
-      <span class="skill-tag">AWS Sagemaker</span>
-      <span class="skill-tag">AWS Athena</span>
-      <span class="skill-tag">AWS Cloudwatch</span>
       <span class="skill-tag">Jira</span>
       <span class="skill-tag">Bitbucket</span>
-      <span class="skill-tag">ChatGPT</span>
-      <span class="skill-tag">Jupyter Notebook</span>
-      <span class="skill-tag">PyCharm</span>
+      <span class="skill-tag">Jupyter</span>
       <span class="skill-tag">VS Code</span>
     </div>
   </div>
@@ -447,8 +513,8 @@
     <div class="skills-label">Operating Systems</div>
     <div class="skills-grid">
       <span class="skill-tag">Linux Ubuntu</span>
-      <span class="skill-tag">Windows</span>
       <span class="skill-tag">macOS</span>
+      <span class="skill-tag">Windows</span>
     </div>
   </div>
 </div>
@@ -458,56 +524,79 @@
   <div class="jobs-grid">
     <div class="job-card-wrap">
       <div class="job-card-timeline">
-        Jan 2024 – Present
+        Aug 2024 – Present
         <div class="job-company-label">Doctolib</div>
       </div>
       <div class="job-card-main">
         <div class="job-title">Software Engineer</div>
-        <div class="job-location">Germany</div>
+        <div class="job-location">Berlin, Germany</div>
         <ul class="job-bullets">
-          <li>Building LLM-based conversational agents for healthcare applications</li>
-          <li>Developing robust Python solutions for production systems</li>
+          <li>Contributed to an LLM-based phone assistant used by patients to book appointments and request prescriptions</li>
+          <li>Built and improved production AI agents in Python using PydanticAI, including integrations and automated tests</li>
+          <li>Implemented the Patient Messaging Agent and integrated it with internal patient context services</li>
+          <li>Designed GDPR-safe product analytics architecture for agent telemetry and A/B testing support</li>
+          <li>Improved STT reliability on Kubernetes with gRPC readiness probes; defined SLOs and alerting in Datadog/Terraform</li>
+          <li>Improved LLM quality and safety via evaluation suites (BrainTrust) and guardrail tests</li>
         </ul>
         <div class="tech-stack">
           <span class="tech-tag">Python</span>
           <span class="tech-tag">LLMs</span>
-          <span class="tech-tag">NLP</span>
-          <span class="tech-tag">Pydantic AI</span>
+          <span class="tech-tag">PydanticAI</span>
           <span class="tech-tag">PostgreSQL</span>
           <span class="tech-tag">Elasticsearch</span>
+          <span class="tech-tag">Kubernetes</span>
+          <span class="tech-tag">Terraform</span>
           <span class="tech-tag">Datadog</span>
           <span class="tech-tag">Sentry</span>
-          <span class="tech-tag">Metabase</span>
-          <span class="tech-tag">Amplitude</span>
         </div>
       </div>
     </div>
     <div class="job-card-wrap">
       <div class="job-card-timeline">
-        Jun 2022 – Dec 2023
+        Dec 2023 – Jul 2024
         <div class="job-company-label">Aaron GmbH</div>
       </div>
       <div class="job-card-main">
-        <div class="job-title">Machine Learning Research Engineer</div>
+        <div class="job-title">Python Developer</div>
         <div class="job-location">Berlin, Germany</div>
         <ul class="job-bullets">
-          <li>Designed and implemented data pipelines for robust cleaning and anonymization of textual data</li>
-          <li>Built machine learning models for text as well as audio data</li>
-          <li>Created software solutions to enhance and optimize dialogue flow, improving user interactions</li>
+          <li>Engineered and optimized the phone-assistant flow engine for real-time conversational logic and call routing</li>
+          <li>Wrote the technical design for Patient Identification v1 and contributed to its implementation</li>
+          <li>Implemented a yes/no/unknown classifier endpoint with PromptFoo evaluation suites</li>
+          <li>Developed production features and maintained automated unit/integration tests</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">LLMs</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Promptfoo</span>
+          <span class="tech-tag">Testing</span>
+          <span class="tech-tag">Git</span>
+        </div>
+      </div>
+    </div>
+    <div class="job-card-wrap">
+      <div class="job-card-timeline">
+        Jun 2022 – Nov 2023
+        <div class="job-company-label">Aaron GmbH</div>
+      </div>
+      <div class="job-card-main">
+        <div class="job-title">Machine Learning Engineer</div>
+        <div class="job-location">Berlin, Germany</div>
+        <ul class="job-bullets">
+          <li>Designed pipelines for cleaning and anonymizing healthcare text data for training and analysis</li>
+          <li>Trained ML models for text and audio (TensorFlow, PyTorch, Whisper) for healthcare communication tasks</li>
+          <li>Scaled data processing and training workflows using AWS (SageMaker, Athena, Glue)</li>
+          <li>Onboarded and mentored an intern on data workflows and delivery practices</li>
         </ul>
         <div class="tech-stack">
           <span class="tech-tag">Python</span>
           <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">Keras</span>
           <span class="tech-tag">PyTorch</span>
-          <span class="tech-tag">Librosa</span>
           <span class="tech-tag">Whisper</span>
-          <span class="tech-tag">Flair</span>
-          <span class="tech-tag">AWS Sagemaker</span>
+          <span class="tech-tag">AWS SageMaker</span>
           <span class="tech-tag">AWS Athena</span>
-          <span class="tech-tag">ChatGPT</span>
-          <span class="tech-tag">Jira</span>
-          <span class="tech-tag">Bitbucket</span>
+          <span class="tech-tag">AWS Glue</span>
         </div>
       </div>
     </div>
@@ -520,66 +609,15 @@
         <div class="job-title">Research Assistant</div>
         <div class="job-location">Sankt Augustin, Germany</div>
         <ul class="job-bullets">
-          <li>Contributed to the development of lesion detection methods for complex 3D CT scans</li>
-          <li>Conducted training sessions and experiments with three object detection models—RetinaNet, YOLOv3, and YOLOv5—across various resolutions, analyzing their impact on model accuracy and speed</li>
+          <li>Contributed to lesion detection methods for complex 3D CT scans</li>
+          <li>Trained and evaluated RetinaNet, YOLOv3, and YOLOv5 across resolutions, analyzing accuracy vs. speed trade-offs</li>
         </ul>
         <div class="tech-stack">
           <span class="tech-tag">Python</span>
           <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">Keras</span>
           <span class="tech-tag">PyTorch</span>
-          <span class="tech-tag">Pandas</span>
-          <span class="tech-tag">NumPy</span>
-          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag">OpenCV</span>
           <span class="tech-tag">GPU Cluster</span>
-        </div>
-      </div>
-    </div>
-    <div class="job-card-wrap">
-      <div class="job-card-timeline">
-        Nov 2019 – Apr 2020
-        <div class="job-company-label">Audi AG</div>
-      </div>
-      <div class="job-card-main">
-        <div class="job-title">Digitization for Industrial Engineering Intern</div>
-        <div class="job-location">Ingolstadt, Germany</div>
-        <ul class="job-bullets">
-          <li>Created concept and structure for software within Industrial Engineering</li>
-          <li>Modeled components as part of the digitization process</li>
-          <li>Implemented software to compare different production scenarios</li>
-          <li>Validated results and optimized the tools</li>
-          <li>Created user documentation</li>
-        </ul>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Pandas</span>
-          <span class="tech-tag">NumPy</span>
-          <span class="tech-tag">Tkinter</span>
-          <span class="tech-tag">Git</span>
-          <span class="tech-tag">Docker</span>
-        </div>
-      </div>
-    </div>
-    <div class="job-card-wrap">
-      <div class="job-card-timeline">
-        Apr 2019 – Jun 2019
-        <div class="job-company-label">INSORO GmbH</div>
-      </div>
-      <div class="job-card-main">
-        <div class="job-title">Applied Machine Learning Intern</div>
-        <div class="job-location">Cologne, Germany</div>
-        <ul class="job-bullets">
-          <li>Utilized Deep Learning models (LSTM & GRU) for capital markets time-series prediction</li>
-          <li>Created automated test cases for portfolio optimization</li>
-        </ul>
-        <div class="tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">Keras</span>
-          <span class="tech-tag">PyTorch</span>
-          <span class="tech-tag">Pandas</span>
-          <span class="tech-tag">NumPy</span>
-          <span class="tech-tag">Scikit-learn</span>
         </div>
       </div>
     </div>
@@ -592,7 +630,7 @@
   <div class="jobs-grid">
     <div class="job-card-wrap">
       <div class="job-card-timeline">
-        2017 – 2022
+        Apr 2017 – Jan 2022
         <div class="job-company-label">MSc in Autonomous Systems</div>
       </div>
       <div class="job-card-main">
@@ -648,32 +686,76 @@
   </div>
 </div>
 
-<!-- Certificates Section Restored -->
-<div class="section-title">Certificates & Letters</div>
-<div class="cert-grid">
+<!-- YouTube Channel -->
+<div id="youtube" class="publications-section">
+  <div class="section-title">YouTube — Mysteries of Aaryavarta</div>
+  <div class="cert-card" style="border-left-color: #c4302b;">
+    <div class="cert-title">Mysteries of Aaryavarta</div>
+    <div class="cert-org">History &amp; documentary channel · <a href="https://www.youtube.com/@MysteriesofAaryavarta" target="_blank" rel="noopener" style="color: var(--company);">@MysteriesofAaryavarta</a></div>
+    <div class="cert-meta" style="line-height: 1.7; margin-top: 10px;">
+      <em>Unveiling the Unseen. Decoding the Eternal.</em><br><br>
+      A storytelling channel exploring the history, legends, and mysteries of the Indian subcontinent — especially Nepal and India.
+      Series include temple histories (Pashupatinath, Budhanilkantha), the Gorakhnath narrative across Nepal and Gorakhpur,
+      and documentary-style episodes blending research, maps, charts, and visual storytelling.
+      Built alongside my engineering work over the past few months as a creative outlet for history, scripting, and content production.
+    </div>
+    <div class="cert-actions">
+      <a href="https://www.youtube.com/@MysteriesofAaryavarta" target="_blank" rel="noopener" style="background: #c4302b;">Visit Channel</a>
+      <a href="https://www.youtube.com/@MysteriesofAaryavarta?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+    </div>
+    <div class="youtube-featured">
+      <h3>Latest — Pashupatinath: The Forgotten Siege</h3>
+      <div class="youtube-embed-wrap" id="featured-youtube"
+           data-video-id="v-OAaPG1hSc"
+           data-start="2"
+           data-watch-url="https://www.youtube.com/watch?v=v-OAaPG1hSc&t=2s">
+        <a class="youtube-poster" id="featured-youtube-poster"
+           href="https://www.youtube.com/watch?v=v-OAaPG1hSc&t=2s"
+           target="_blank" rel="noopener"
+           aria-label="Play Pashupatinath: The Forgotten Siege on YouTube">
+          <img src="https://img.youtube.com/vi/v-OAaPG1hSc/hqdefault.jpg"
+               alt="Pashupatinath: The Forgotten Siege thumbnail">
+          <span class="youtube-play" aria-hidden="true"></span>
+        </a>
+      </div>
+      <p class="youtube-caption">
+        Part 2 of the Pashupatinath series — the 1349 CE invasion, the broken Shivling, and how faith endured.
+        <a href="https://www.youtube.com/watch?v=v-OAaPG1hSc&t=2s" target="_blank" rel="noopener">Watch on YouTube</a>
+        ·
+        <a href="https://www.youtube.com/watch?v=dCXW0DsBzfw" target="_blank" rel="noopener">Part 1 (Legend to Licchavi Nepal)</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- References & Certificates -->
+<div id="references" class="timeline-section">
+  <div class="section-title">References & Certificates</div>
+  <div class="cert-grid">
+  <div class="cert-card">
+    <div class="cert-title">Doctolib — Interim Report (English)</div>
+    <div class="cert-org">Software Engineer, Conversational AI / Phone Assistant</div>
+    <div class="cert-meta">Official interim reference from Doctolib GmbH covering LLM phone assistant work, patient messaging agents, reliability monitoring, and ML engineering at Aaron GmbH (acquired 2024).</div>
+    <div class="cert-actions">
+      <a href="assets/doctolib_interim_report.pdf" target="_blank" rel="noopener">View PDF</a>
+    </div>
+  </div>
   <div class="cert-card">
     <div class="cert-title">Fraunhofer IAIS Certificate</div>
     <div class="cert-org">Research Assistant — Sankt Augustin, Germany</div>
-    <div class="cert-meta">Official certification of your research assistantship, covering medical imaging and 3D CT lesion detection.</div>
+    <div class="cert-meta">Research on medical imaging and 3D CT lesion detection with object detection models.</div>
     <div class="cert-actions">
       <a href="assets/fraunhofer_certificate.pdf" target="_blank" rel="noopener">View PDF</a>
     </div>
   </div>
   <div class="cert-card">
-    <div class="cert-title">Internship Certificate — Audi AG</div>
-    <div class="cert-org">Digitization for Industrial Engineering Intern — Ingolstadt, Germany</div>
-    <div class="cert-meta">Digitization tooling, production scenario comparison, validation, and documentation for industrial engineering.</div>
+    <div class="cert-title">University Degree Certificate</div>
+    <div class="cert-org">M.Sc. Autonomous Systems — Hochschule Bonn-Rhein-Sieg</div>
+    <div class="cert-meta">Official university certificate for completed Master's degree.</div>
     <div class="cert-actions">
-      <a href="assets/second-internship.pdf" target="_blank" rel="noopener">View PDF</a>
+      <a href="assets/university_certificate.pdf" target="_blank" rel="noopener">View PDF</a>
     </div>
   </div>
-  <div class="cert-card">
-    <div class="cert-title">Internship Certificate — Insoro GmbH</div>
-    <div class="cert-org">Applied ML Intern — Cologne, Germany</div>
-    <div class="cert-meta">Deep learning time-series work (LSTM/GRU) and automated tests for portfolio optimization.</div>
-    <div class="cert-actions">
-      <a href="assets/first_intrenship.pdf" target="_blank" rel="noopener">View PDF</a>
-    </div>
   </div>
 </div>
 
@@ -701,7 +783,7 @@
   <div class="language-item">
     <span class="language-name">German</span>
     <div class="language-dots">
-      <span class="language-dot filled"></span><span class="language-dot"></span><span class="language-dot"></span><span class="language-dot"></span><span class="language-dot"></span>
+      <span class="language-dot filled"></span><span class="language-dot filled"></span><span class="language-dot"></span><span class="language-dot"></span><span class="language-dot"></span>
     </div>
   </div>
 </div>
@@ -710,7 +792,7 @@
 <div id="contact" class="contact-block">
   <div class="contact-info">
     <div><i class="fas fa-map-marker-alt"></i> &nbsp; Große Scharrnstraße 17A, 15230 Frankfurt (Oder), Germany</div>
-    <div><i class="fas fa-phone"></i> &nbsp; +49 176 35440674</div>
+    <div><i class="fas fa-phone"></i> &nbsp; +49 176 74545056</div>
     <div><i class="fas fa-envelope"></i> &nbsp; ssramitsharma@gmail.com</div>
   </div>
 </div>
@@ -721,10 +803,47 @@
   <div class="footer-social">
     <a href="https://linkedin.com/in/ssramitsharma" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     <a href="https://github.com/ssramitsharma" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.youtube.com/@MysteriesofAaryavarta" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
     <a href="mailto:ssramitsharma@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    <a href="tel:+4917635440674" title="Phone"><i class="fas fa-phone"></i></a>
+    <a href="tel:+4917674545056" title="Phone"><i class="fas fa-phone"></i></a>
   </div>
-  <div>© 2025 Ramit Sharma • Design Inspired by CreativeCV</div>
+  <div>© 2026 Ramit Sharma</div>
 </footer>
+<script>
+(function () {
+  var wrap = document.getElementById('featured-youtube');
+  var poster = document.getElementById('featured-youtube-poster');
+  if (!wrap || !poster) return;
+
+  function loadEmbed() {
+    var videoId = wrap.dataset.videoId;
+    var start = wrap.dataset.start || '0';
+    var origin = location.origin || 'https://ssramitsharma.github.io';
+    var src = 'https://www.youtube.com/embed/' + videoId
+      + '?start=' + start
+      + '&rel=0&modestbranding=1'
+      + '&origin=' + encodeURIComponent(origin);
+
+    wrap.innerHTML = '<iframe'
+      + ' src="' + src + '"'
+      + ' title="Pashupatinath: The Forgotten Siege — Mysteries of Aaryavarta"'
+      + ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
+      + ' allowfullscreen'
+      + ' referrerpolicy="strict-origin-when-cross-origin"'
+      + '></iframe>';
+  }
+
+  poster.addEventListener('click', function (e) {
+    if (location.protocol !== 'http:' && location.protocol !== 'https:') return;
+    e.preventDefault();
+    loadEmbed();
+  });
+
+  // Auto-embed when served over HTTP(S) — avoids YouTube Error 153 on file:// previews
+  if (location.protocol === 'http:' || location.protocol === 'https:') {
+    loadEmbed();
+  }
+})();
+</script>
 </body>
 </html>
